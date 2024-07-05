@@ -1,0 +1,71 @@
+
+:root {
+  --color-primary: #97eb40;
+  --color-secondary: #59a467;
+  --color-border: #13381a;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: azure;
+}
+
+.contenedor {
+  display:grid;
+  margin: auto;
+  grid-template-columns: 150px 150px 150px;
+  grid-template-rows: 75px 75px 75px;
+  grid-template-areas: 
+    "one two two"
+    "three three four"
+    "five six seven";
+  place-content: center;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.item-1 {
+  background-color: var(--color-primary);
+  grid-area: one;
+}
+
+.item-2 {
+  background-color: var(--color-secondary);
+  grid-area: two ;
+}
+
+.item-3 {
+  background-color: var(--color-border);
+  grid-area: three;
+}
+
+.item-4 {
+  background-color: var(--color-primary);
+  grid-area: four;
+}
+
+.item-5 {
+  background-color: var(--color-primary);
+  grid-area: five;
+}
+
+.item-6 {
+  background-color: var(--color-secondary);
+  grid-area: six;
+}
+
+.item-7 {
+  background-color: var(--color-border);
+  grid-area: seven;
+}
